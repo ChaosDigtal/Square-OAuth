@@ -54,6 +54,7 @@ def callback():
 
   # Extract the returned authorization code from the URL
   authorization_code = request.args.get('code')
+  print(authorization_code)
   if authorization_code:
 
     # Provide the code in a request to the Obtain Token endpoint
